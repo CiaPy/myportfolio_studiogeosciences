@@ -122,11 +122,15 @@ section{padding:clamp(72px,11vh,138px) 0}
   padding: clamp(60px, 10vh, 120px) 0;
 }
 
-.work-images {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+.work-image {
+  display: flex;
+  justify-content: center;
   margin-top: 40px;
+}
+
+.work-image img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* ŒUVRES */
@@ -301,12 +305,8 @@ footer{padding:clamp(70px,10vh,128px) 0 40px}
   <div class="wrap">
     <div class="sec-head reveal"><span class="num">02</span><h2>My Work</h2></div>
     <p class="reveal">I am a geoscientific photographer based in France, specializing in petrographic photography</p>
-    <div class="work-images reveal">
-      <img src="images/rock1.jpg" alt="Rock sample 1">
-      <img src="images/rock2.jpg" alt="Rock sample 2">
-      <img src="images/microscope.jpg" alt="Microscope">
-      <img src="images/arrows.jpg" alt="Arrows illustration"> 
-      <img src="images/map.jpg" alt="Geologic map">
+    <div class="work-image reveal">
+      <img src="images/my-work.png" alt="My Work: rock samples, microscope, arrows, and geologic map">
     </div>
   </div>
 </section>
