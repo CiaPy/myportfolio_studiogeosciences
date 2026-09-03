@@ -153,6 +153,9 @@ section{padding:clamp(72px,11vh,138px) 0}
 .ref{display:grid;grid-template-columns:170px 1fr;gap:4px 30px;padding:22px 0;border-bottom:1px solid var(--line);align-items:baseline}
 .ref .cat{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
 .ref .title{font-family:var(--f-display);font-weight:700;font-size:clamp(1.05rem,2.2vw,1.4rem)}
+.ref .title a{border-bottom:1px solid var(--line);transition:color .25s,border-color .25s}
+.ref .title a:hover{color:var(--accent);border-color:var(--accent)}
+.ref .title a::after{content:" ↗";font-family:var(--f-mono);font-size:.7em;color:var(--ink-soft);vertical-align:super}
 .ref .meta{grid-column:2;font-size:.9rem;color:var(--ink-soft)}
 @media(max-width:640px){.ref{grid-template-columns:1fr;gap:2px}.ref .meta{grid-column:1}}
 
@@ -373,11 +376,28 @@ footer{padding:clamp(70px,10vh,128px) 0 40px}
     <blockquote class="quote reveal">« La géologie est une science d'<em>observation</em> et d'<em>imagination</em>. »
       <cite>— Maurice Mattauer, géologue</cite>
     </blockquote>
-    <div class="refs reveal">
-      <div class="ref"><span class="cat">Cinéma</span><div><div class="title">Au cœur des volcans : Requiem pour Katia et Maurice Krafft</div></div><div class="meta">Film documentaire réalisé par Werner Herzog, 2024</div></div>
-      <div class="ref"><span class="cat">Art numérique</span><div><div class="title">Bosphorus — Refik Anadol</div></div><div class="meta">Pilevneli Gallery, Istanbul, 2018</div></div>
-      <div class="ref"><span class="cat">Data art</span><div><div class="title">Data Humanism — Giorgia Lupi</div></div><div class="meta">Manifeste sur la visualisation de données, 2017</div></div>
-      <div class="ref"><span class="cat">Lecture</span><div><div class="title">Monts et Merveilles — Maurice Mattauer</div></div><div class="meta">Beautés et richesses de la géologie · Hermann</div></div>
+        <div class="refs reveal">
+      <div class="ref">
+        <span class="cat">Cinéma</span>
+        <div><div class="title"><a href="https://www.gncr.fr/?films-soutenus=au-coeur-des-volcans-requiem-pour-katia-maurice-krafft" target="_blank" rel="noopener">Au cœur des volcans : Requiem pour Katia et Maurice Krafft</a></div></div>
+        <div class="meta">Film documentaire réalisé par Werner Herzog, 2024</div>
+      </div>
+      <div class="ref">
+        <span class="cat">Art numérique</span>
+        <div><div class="title"><a href="https://vimeo.com/325634926" target="_blank" rel="noopener">Bosphorus — Refik Anadol</a></div></div>
+        <div class="meta">Pilevneli Gallery, Istanbul, 2018</div>
+      </div>
+      <div class="ref">
+        <span class="cat">Data art</span>
+        <div><div class="title"><a href="http://giorgialupi.com/data-humanism-my-manifesto-for-a-new-data-wold" target="_blank" rel="noopener">Data Humanism — Giorgia Lupi</a></div></div>
+        <div class="meta">Manifeste sur la visualisation de données, 2017</div>
+      </div>
+      <div class="ref">
+        <span class="cat">Lecture</span>
+        <div><div class="title"><a href="https://www.decitre.fr/ebooks/monts-et-merveilles-9782402623957_9782402623957_1.html" target="_blank" rel="noopener">Monts et Merveilles — Maurice Mattauer</a></div></div>
+        <div class="meta">Beautés et richesses de la géologie · Hermann, 1989</div>
+      </div>
+    </div>
     </div>
   </div>
 </section>
